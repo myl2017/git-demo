@@ -1,0 +1,144 @@
+/*Global CSS*/
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+ul,ol{
+    list-style:none;
+}
+#container{
+    /* max-width: 960px;
+     margin: 0 auto;
+      background: rgb(231,240,249);
+    font-family: Helvetica,Arial,cursive;*/
+}
+.classify,.summary,.album{
+    /*width: 100%;
+    border: 1px solid;*/
+}
+/*Simple pages CSS*/
+.classify{
+    text-align:center;
+    padding-top:20px;
+    padding-bottom:16px;
+
+}
+.classify img{
+    width:100px;
+    height:100px;
+    border-radius:50%;
+
+}
+.classify .tags{
+    margin:8px 15px;
+}
+.classify .tags span{
+    background:rgb(216,216,216);
+    display:inline-block;
+    padding:.5em  2em;
+    margin: 0.5em 1em;
+
+}
+/*tags block*/
+@media (max-width:425px){
+    section.classify .tags{
+        max-width: 320px;
+        margin: 0 auto;
+    }
+}
+
+.summary{
+    background:rgb(236,236,236);
+    text-align:center;
+    padding-bottom:10px;
+    padding-top:18px;
+}
+.summary h2{
+    margin-top:10px;
+    margin-bottom:18px;
+    margin-left: auto;
+    margin-right: auto;
+    background:rgb(216,216,216);
+    max-width: 17em;
+    border-radius: 8px;
+}
+.summary p{
+    margin-top:18px;
+    margin-bottom:18px;
+    margin-left: auto;
+    margin-right: auto;
+    background:rgb(232,231,231);
+    max-width: 35em;
+    border-radius: 8px;
+}
+
+.summary .mw-pc{
+    display: block;
+}
+.summary .mw-425{
+    display: none;
+}
+/*summary block*/
+@media (max-width:425px){
+    .summary .mw-pc{
+        display: none;
+    }
+    .summary .mw-425{
+        display: block;
+    }
+}
+
+.album h3{
+     text-align:center;
+     background:rgb(216,216,216);
+     max-width: 3em;
+     border-radius: 3px;
+ }
+.album ul{
+    display:flex;
+    flex-wrap:wrap;
+    max-width:660px;
+    margin:0 auto;
+}
+.album li{
+    max-width:200px;
+    margin:16px 10px;
+}
+.album img{
+    width:100%;
+}
+
+/*album block*/
+@media (max-width:768px){
+    .album ul{
+        justify-content: center;
+        max-width: 440px;
+    }
+    .album li{
+        max-width:200px;
+        margin:16px 10px;
+    }
+    .album img{
+        width:100%;
+    }
+    .album .resp768{
+        display: none;
+    }
+}
+@media (max-width:425px){
+    .album ul{
+        justify-content: center;
+        max-width: 220px;
+    }
+    .album li{
+        max-width:200px;
+        margin:16px 10px;
+    }
+    .album img{
+        width:100%;
+    }
+    .album .resp768{
+        display: block;
+    }
+}
